@@ -20,7 +20,7 @@ class CreateAppointmentTable extends Migration
             $table->integer('consultation_id');
             $table->enum('level',[1.2]);
             $table->date('date')->nullable();
-            $table->time(time)->nullable();
+            $table->time('time')->nullable();
             $table->enum('status',[1.2]);
             $table->timestamps();
             $table->softdeletes();
