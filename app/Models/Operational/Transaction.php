@@ -37,4 +37,11 @@ class Transaction extends Model
         'deleted_at',
     ];
 
+    //one to many
+    public function Appointment()
+    {
+        //3 parameter(path models,fiels foreign key)
+        return  $this->belongTo('app\Models\Operational\appointment'.'Appointment_id');
+    }
+
 }
